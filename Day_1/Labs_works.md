@@ -98,6 +98,11 @@ Keys to use:
 
 [sch to symbol.zip](https://github.com/Janavind/VSD-Physical-Verification/files/6978610/sch.to.symbol.zip)
 
+# Step 5: Simulating the testbench
+
+![image](https://user-images.githubusercontent.com/88816771/129381480-00059ed6-40fe-48bb-9d8e-34901b00da06.png)
+
+
 
 
 
