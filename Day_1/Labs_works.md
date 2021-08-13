@@ -1,4 +1,4 @@
-# Lab1: Checking tool installation
+# Step 1: Checking tool installation
 Here the proper functioning of the tools are checked 
 
   1. Type Magic
@@ -26,7 +26,7 @@ Running the tools without console will be like:
 ![image](https://user-images.githubusercontent.com/88816771/129249002-bc6b2770-6a03-4275-b301-efcf74d41056.png)
 
 
-# Lab2: Creating Device Layout
+# Step 2: Creating Device Layout
 To start with a sample design, say, inverter:
 1. make a new directory named inverter
 2. Make sub directories: magic, netgen, xschem
@@ -64,7 +64,7 @@ Check the technology and it should be sky130A
 
 https://user-images.githubusercontent.com/88816771/129264205-642dd086-2d22-4702-a883-4c160a8352e3.mp4
 
-# Lab 3: Creating schematic in xschem
+# Step 3: Creating schematic in xschem
 
 cd ../xschem
 The tool opens
@@ -88,7 +88,7 @@ Keys to use:
 - "w" for wire
 
 
-# Lab 4: Schematic to symbol
+# Step 4: Schematic to symbol
 
 - make schematic to symbol by following the video
 - The voltage sources are drawn from devices
