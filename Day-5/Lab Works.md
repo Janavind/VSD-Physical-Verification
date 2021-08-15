@@ -82,9 +82,25 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 # LVS with macros
 
-Import the management protect cell from magic and extract it to spice as shown below
+- Import the management protect cell from magic and extract it to spice as shown below
 
 ![image](https://user-images.githubusercontent.com/88816771/129493131-b657afca-1677-400f-974b-d77335d914a6.png)
+
+- check for LVS, still errors exists. Tyo resolve these, use magic to figure out the gnd nets that are connected together as hsown below
+
+ ![image](https://user-images.githubusercontent.com/88816771/129493275-ce372191-27ea-4049-9156-eccbb72edc2d.png)
+ 
+ - Include following commands in to the high voltage management protection files
+   - *assign vssa1 = vssd;*
+   - *assign vssa2 = vssd;* and the following ones into the management protection verilog files
+   - *assign vssa1 = vssd;*
+   - *assign vssa2 = vssd;
+   - *assign vssd1 = vssd;*
+   - *assign vssd2 = vssd;
+
+
+  
+
 
 
 
