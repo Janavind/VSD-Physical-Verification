@@ -103,13 +103,15 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 # LVS with digital_pll
 
 - Extract the below circuit to spice
+
 ![image](https://user-images.githubusercontent.com/88816771/129489076-fa0b5dcb-c759-4299-9546-fc91882323ce.png)
 
 - Add "export MAGIC_EXT_USE_GDS=1" to run_lvs.sh and rerun LVS check
 - There are missing diodes and, this can be fixed by adding diodes into the spice file. By doing so, the diode errors are fixed
 - Errors related to power can be fixed by connecting them to the power supplies
 
-![image](https://user-images.githubusercontent.com/88816771/129493525-ea26f50b-1c68-48e7-a41c-9c737468db3d.png)
+![image](https://user-images.githubusercontent.com/88816771/129491673-bdbebe6c-28bf-45c1-938a-16f9854be19c.png)
+
 
 # LVS with property Errors
 
@@ -120,5 +122,7 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 - Doing so, brings down the LVS errors to 1 as shown below, which can be solved by doing clean DRC
 
-![image](https://user-images.githubusercontent.com/88816771/129491673-bdbebe6c-28bf-45c1-938a-16f9854be19c.png)
+![image](https://user-images.githubusercontent.com/88816771/129493525-ea26f50b-1c68-48e7-a41c-9c737468db3d.png)
+
+
 
