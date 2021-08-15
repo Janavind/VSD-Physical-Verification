@@ -41,9 +41,24 @@ chmod a+x run_lvs.sh
 - Permute commands can be included in the setup file to make LVS understand that the pins can be swapped. 
   - *permute "-circuit1 cell1 A C"*
   - *permute "-circuit2 cell2 A C"*
-  
+
+# LVS with Small Analog Block 
+
+- Use xschem to open the caravel wrapper project and select LVS netlist: Top level is a .subcircuit
+ ![image](https://user-images.githubusercontent.com/88816771/129491765-5604e02f-8cd6-4956-800c-dcc4e95d98c8.png)
+ 
+ - Open Caravel project in Magic and extract to spice as shown below:  
 
 https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-a702-22c6338a2052.mp4
+
+- Check for LVS, and results in errors.
+- The testbench circuit can be seen in xschem and LVS check on the same results in more errors
+
+# LVS with Analog devices-Poer on reset
+
+ 
+
+
 
 ![image](https://user-images.githubusercontent.com/88816771/129489076-fa0b5dcb-c759-4299-9546-fc91882323ce.png)
 
