@@ -68,8 +68,6 @@ https://user-images.githubusercontent.com/88816771/129452564-46e7a441-7802-4f18-
 
 https://user-images.githubusercontent.com/88816771/129452710-db6edb87-7f6c-413b-8860-45ac18b71295.mp4
 
-## Exercise 4:
- 
 ## Exercise 5: 
 ### Derived layers
 *cif see layername* can be used to see different layers
