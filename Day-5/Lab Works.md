@@ -80,7 +80,12 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 - Add "export MAGIC_EXT_USE_GDS=1" in the run_lvs.sh and this resolves all the errors
 
-![image](https://user-images.githubusercontent.com/88816771/129493036-cf6970ab-015a-47e0-99fc-87ad44bf6a58.png)
+# LVS with macros
+
+Import the management protect cell from magic and extract it to spice as shown below
+
+![image](https://user-images.githubusercontent.com/88816771/129493131-b657afca-1677-400f-974b-d77335d914a6.png)
+
 
 
 
