@@ -31,6 +31,9 @@ chmod a+x run_lvs.sh
 
 # LVS with Blackboxes Subcircuits
 
+- The netlist has empty subcircuits and a test subcircuit. When changing the order of the pins shows mismatched nets and devices
+- when a new pin is replaced in one of the netlists, the result from comp.out shows "no matching pins"
+- When a cell name is replaced with a new name, the LVS result shows pins matching but it flattens the unmatched subcells. To resolve this, include -blackbox next to -json in the above command in  run_lvs.sh. Now, the errors are seen
 
 
 
