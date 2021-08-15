@@ -78,6 +78,11 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 ![image](https://user-images.githubusercontent.com/88816771/129492987-d073dd08-cf41-440f-95fc-cae9a46491ff.png)
 
+- Add "export MAGIC_EXT_USE_GDS=1" in the run_lvs.sh and this resolves all the errors
+
+![image](https://user-images.githubusercontent.com/88816771/129493036-cf6970ab-015a-47e0-99fc-87ad44bf6a58.png)
+
+
 
 
 
