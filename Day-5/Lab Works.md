@@ -64,6 +64,25 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 ![image](https://user-images.githubusercontent.com/88816771/129492653-196546f5-4224-481a-96e5-480a726417a9.png)
 
+- Add resitor to the schematic for reduced LVS errors
+
+![image](https://user-images.githubusercontent.com/88816771/129492721-c419ac43-44c8-4c84-b05f-162e278ce37f.png)
+
+- The remaining errors would be from vssd nodes
+
+![image](https://user-images.githubusercontent.com/88816771/129492795-b7bcb25b-6ff0-4e5f-af5a-cd55e2ab2f32.png)
+
+# LVS with Verilog netlists
+
+- The circuit is extracted to spice from magic and it is checked for LVS with the verilog netlist. It is found that the filler_0_11 is missing.
+
+![image](https://user-images.githubusercontent.com/88816771/129492987-d073dd08-cf41-440f-95fc-cae9a46491ff.png)
+
+
+
+
+
+
 
 
 
