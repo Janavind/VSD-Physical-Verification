@@ -35,7 +35,10 @@ chmod a+x run_lvs.sh
 - when a new pin is replaced in one of the netlists, the result from comp.out shows "no matching pins"
 - When a cell name is replaced with a new name, the LVS result shows pins matching but it flattens the unmatched subcells. To resolve this, include -blackbox next to -json in the above command in  run_lvs.sh. Now, the errors are seen
 
-
+# LVS with SPICE low-level components
+- netA.spice has some of the components like resisitors, capacitors and diodes included. It results in error. 
+- sky130A_setup.tcl file is copied into the current directory
+- 
 
 https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-a702-22c6338a2052.mp4
 
