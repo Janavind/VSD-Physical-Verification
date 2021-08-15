@@ -37,11 +37,16 @@ chmod a+x run_lvs.sh
 
 # LVS with SPICE low-level components
 - netA.spice has some of the components like resisitors, capacitors and diodes included. It results in error. 
-- sky130A_setup.tcl file is copied into the current directory
-- 
+- sky130A_setup.tcl file is copied into the current directory. Now, the errors are seen.
+- Permute commands can be included in the setup file to make LVS understand that the pins can be swapped. 
+  - *permute "-circuit1 cell1 A C"*
+  - *permute "-circuit2 cell2 A C"*
+  
 
 https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-a702-22c6338a2052.mp4
 
 ![image](https://user-images.githubusercontent.com/88816771/129489076-fa0b5dcb-c759-4299-9546-fc91882323ce.png)
+
+![image](https://user-images.githubusercontent.com/88816771/129491590-c65b8e4c-b396-497d-a62e-9b123ca8c0f9.png)
 
 
