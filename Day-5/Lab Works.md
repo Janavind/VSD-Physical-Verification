@@ -55,6 +55,18 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 - The testbench circuit can be seen in xschem and LVS check on the same results in more errors
 
 # LVS with Analog devices-Poer on reset
+- Check the power vdd3v3 from the caravel and find out the connections relating to that.
+- Get the node that connects vdd3v3 
+
+![image](https://user-images.githubusercontent.com/88816771/129492580-eb2a8bd9-e068-4a4c-8d29-e834674d7474.png)
+
+- Use the below commands to paint the layer that separates the power connections
+
+![image](https://user-images.githubusercontent.com/88816771/129492653-196546f5-4224-481a-96e5-480a726417a9.png)
+
+
+
+
 
  
 
