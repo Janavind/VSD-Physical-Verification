@@ -528,6 +528,12 @@ Paint the poly to resolve the errors
 
 # Day - 4 OpenLane FLow
 
+## OpenLane/OpenRoad Automation
+## OpenLane flow - non-interactive
+## OpenLane flow - interactive
+## Common DRC Errors
+## violations - Fixing manually
+
 # Day - 5 LVS
 ## LVS Basics
 Here, a basic comparison between two netlists are made to see for the circuit matching or mismatch errors
