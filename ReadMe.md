@@ -76,9 +76,6 @@ Following are the steps to install PDK:
 4. Run **make**
 5. Run **sudo make install**
 
-   4. 
-
-
 ## Tools
 
 ![image](https://user-images.githubusercontent.com/88816771/129223330-1e44a475-731f-4dfe-a59d-b5a00c131f0d.png)
