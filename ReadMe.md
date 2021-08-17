@@ -550,8 +550,28 @@ To do the open lane flow non-interactively:
 ## OpenLane flow - interactive
   - run ./flow.tcl -interactive
   - prep -design <design name> -tag <tag name> 
+  
+ ![image](https://user-images.githubusercontent.com/88816771/129782974-691469d9-2b13-4f51-b139-5bfd3669769b.png)
+  
+  For synthesis type run_synthesis
+  
+ ![image](https://user-images.githubusercontent.com/88816771/129783301-0fdc4083-5e80-4856-a4e2-5c5c83b33f94.png)
+  
+  In the same way other steps can be invoked interactively. This helps to resolve the errors whever possible and saves time by not running the complete flow each time.
+
+
 ## Common DRC Errors
+  - Follow the local interconnect rules
+  - Plan the density in a appropriate way like, utilizatioln ratio and the cell density
+  
+  Here is a sample config.tcl parameters I used for the c17 design
+  
+ ![image](https://user-images.githubusercontent.com/88816771/129784257-cf685388-0603-485e-8b47-0a6c724c6084.png)
+ 
 ## violations - Fixing manually
+  
+  - The violations are seen as white dots in the .mag file
+  - To fix the DRC violatiolns manually, Choose .mag file of the error reported design and correct the violations by design rules and then save it to GDSII
 
 # Day - 5 LVS
 ## LVS Basics
