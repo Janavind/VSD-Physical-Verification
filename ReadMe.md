@@ -34,6 +34,12 @@ Instructor: Tim Edwards, works for Efabless and a open tools developer**
   - Antenna Checks
   - Challenges
 - **Day 4 - OpenLane Flow**
+  - OpenLane/OpenRoad Automation
+  - OpenLane flow - non-interactive
+  - OpenLane flow - interactive
+  - Common DRC Errors
+  - violations - Fixing manually
+  
 - **Day 5 - LVS**
 
 ## Introduction to Skywater PDK
