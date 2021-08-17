@@ -1,5 +1,5 @@
 # VSD-Physical-Verification
-## **This repo details the learning in 5-day Physical Verification workshop by VSD from Aug-11 2021 to Aug-15 2021.**
+## **This report details the learning in 5-day Physical Verification workshop by VSD from Aug-11 2021 to Aug-15 2021.**
 
 ![image](https://user-images.githubusercontent.com/88816771/129772417-2e48ab37-a17d-42e3-bd6d-db5baa56c0ec.png)
 
