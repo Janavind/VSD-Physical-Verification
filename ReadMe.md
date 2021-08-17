@@ -41,6 +41,16 @@ Instructor: Tim Edwards, works for Efabless and a open tools developer**
   - violations - Fixing manually
   
 - **Day 5 - LVS**
+  - Basics
+  - LVS - sub-circuits
+  - LVS - Blackbox subcircuits
+  - LVS - SPICE low-level components
+  - LVS - small Analog blocks
+  - LVS - Analog Devices - Power on reset
+  - LVS - verilog netlists
+  - LVS - Macros
+  - LVS - Digital PLL
+  - LVS - Property errors
 
 ## Introduction to Skywater PDK
 
