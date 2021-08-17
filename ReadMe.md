@@ -506,7 +506,7 @@ Paint the poly to resolve the errors
 
 ### Adding metal layers and filler cells
 - Metal layers can be seen as of the below image
--   
+
 ![image](https://user-images.githubusercontent.com/88816771/129463422-c0351fa4-7591-4b94-b01c-86bcd90a8bef.png)
 
 - Filler shapes
