@@ -76,6 +76,9 @@ Following are the steps to install PDK:
 4. Run **make**
 5. Run **sudo make install**
 
+   4. 
+
+
 ## Tools
 
 ![image](https://user-images.githubusercontent.com/88816771/129223330-1e44a475-731f-4dfe-a59d-b5a00c131f0d.png)
@@ -85,15 +88,40 @@ Following are the steps to install PDK:
   - Mainly used to check DRCs and the violations can be fixed by following the design rules.
   - The layout is drawn based on the parameters used.
 
+To check for the functionality of the tool:
+Type Magic
+  
+![image](https://user-images.githubusercontent.com/88816771/129247063-f92382b9-14db-4acc-b247-ca19b513f4de.png)
+
+Two windows pop-up 
+  - tkcon console
+  - Layout window
+
 - Klayout - Alternative tool for DRC checks
 
 - Openlane - A flow that supports the OpenRoad tools. This can be used non-interactively by calling individual tools or ./flow.tcl can be used to run the scripts interactively for RTL to GDSII
 
 - Xschem - Third repository for Schematic Editor that is used to create new schematics or can be used to import the schematics and generate nelists out of that. Xschem has symbol libraries to create schematics. It supports both ngspice for analog simulation and gaw for waveform viewing
 
+Type Xschem - schematic window pops-up
+
+![image](https://user-images.githubusercontent.com/88816771/129248019-f0acc516-1e9c-40d4-b804-35be6e71b69e.png)
+
 - Netgen - LVS tool that compares the layout design with its schematic between netlists to verify the geometries
 
+Type netgen - tkcon window opens
+
+![image](https://user-images.githubusercontent.com/88816771/129247949-39752797-bbd7-4f2c-ab63-01f55d5d895e.png)
+
 - Ngspice - Spice simulator, used to study the characteristics of the design
+
+Type ngspice - opens in command prompt 
+
+![image](https://user-images.githubusercontent.com/88816771/129248264-b6b7caec-d05b-48a2-a55b-82e89929556e.png)
+
+Running the tools without console will be like:
+
+![image](https://user-images.githubusercontent.com/88816771/129249002-bc6b2770-6a03-4275-b301-efcf74d41056.png)
 
 ## Sky130 Libraries
 
