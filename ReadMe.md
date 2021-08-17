@@ -529,8 +529,27 @@ Paint the poly to resolve the errors
 # Day - 4 OpenLane FLow
 
 ## OpenLane/OpenRoad Automation
+
+![image](https://user-images.githubusercontent.com/88816771/129779384-f9173bc0-1eb2-4f47-8f3c-9b4ad025e7f0.png)
+- Verilog file and sky130nm PDK is given as input to the flow. From here, the files reach each stages of flow like synthesis, floorplan, placament, CTS, routing, STA and finally signoff (DRC and LVS checks) 
+- This results in a complete GDSII file that's appropriate for fabrication
+
 ## OpenLane flow - non-interactive
+To do the open lane flow non-interactively:
+- Choose OpenLane -> Designs -> Choose one design of choice
+- src folder has the RTL design
+- Config.tcl has all the parameters required to design and check the circuit
+- Export the path as:
+  export PDK_ROOT=/usr/share/pdk and run ./flow.tcl -design  <design name>
+- It completes all the steps and generates gds files in the "runs" folder.
+  
+  I have done a c17 design using the above steps and here is the final picture of the run
+  
+  ![image](https://user-images.githubusercontent.com/88816771/129781380-665a8f9a-bfd2-47a9-a280-f692a2978c83.png)
+
 ## OpenLane flow - interactive
+  - run ./flow.tcl -interactive
+  - prep -design <design name> -tag <tag name> 
 ## Common DRC Errors
 ## violations - Fixing manually
 
