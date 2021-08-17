@@ -227,13 +227,14 @@ Keys to use:
 - make schematic to symbol by following the video
 - The voltage sources are drawn from devices
 - Make sure to add the "code-shown" from the devices
-- Add in and out and gnd pins
+- Add in,out and gnd pins
 - Finally save and exit
 
 https://user-images.githubusercontent.com/88816771/129769082-4c85521f-1b77-4a16-8e30-2df6bd6bb20f.mp4
 
 
 ### Simulating the testbench
+The test bench can be simulated and the below is a hint to check for the characteristics fo the deivice
 
 ![image](https://user-images.githubusercontent.com/88816771/129381480-00059ed6-40fe-48bb-9d8e-34901b00da06.png)
 
