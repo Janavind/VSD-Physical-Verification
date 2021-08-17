@@ -566,10 +566,9 @@ To do the open lane flow non-interactively:
   
     Here is a sample config.tcl parameters I used for the c17 design
   
-  
- ![image](https://user-images.githubusercontent.com/88816771/129784257-cf685388-0603-485e-8b47-0a6c724c6084.png)
-  
+  ![image](https://user-images.githubusercontent.com/88816771/129784257-cf685388-0603-485e-8b47-0a6c724c6084.png)
  
+  
 ## violations - Fixing manually
   
   - The violations are seen as white dots in the .mag file
