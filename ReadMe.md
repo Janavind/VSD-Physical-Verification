@@ -6,6 +6,7 @@ The workshop details the process of Physical verification like DRC and LVS check
 The workshop helps in identifying the violatiolns during the physical verification step and rectify the same. The workshop focuses in using open lane intended for physical verification like Magic, Netgen, ngspice, Xschem., etc.,
 
 **Organized by: Kunal Gosh, Co-founder, VSD Corp. Pvt. Ltd.**
+
 **Instructor: Tim Edwards, works for Efabless and a open tools developer**
 
 ## Overview:
@@ -52,78 +53,95 @@ The workshop helps in identifying the violatiolns during the physical verificati
   - LVS - Digital PLL
   - LVS - Property errors
 
-## Introduction to Skywater PDK
+# Introduction to Skywater PDK
+Mosis Foundation, California made the scalable CMOS rules available in 1980s. Skywater 130nm SCMOS is a fully open source, making all the design rules, device definitions, etc., public. 
 
-Mosis Foundation, California made the scalable CMOS rules available in 1980s. Skywater 130nm SCMOS is a fully open source, making all the design rules, device definitions, etc., public.
+The caravel Chip has a pad frame, RISC-V processor and large space for the user to append the design. The design is verified and fabricated by Efabless foundry partnering with Google for free of cost. 
 
-The caravel Chip has a pad frame, RISC-V processor and large space for the user to append the design. The design is verified and fabricated by Efabless foundry partnering with Google for free of cost.
+- PDK refers to Process Design Kit
+- SKY130nm refers to Skywater technology with a feature size of 130nm which is the minimum length of the transitor.
+- Public Repository
+  - Documentation
+    https://skywater-pdk--136.org.readthedocs.build
+  - PDK Library and files
+    https://github.com/google/skywater-pdk
+  - Community - slack
+    https://join.skywater.tools
 
-PDK refers to Process Design Kit
-SKY130nm refers to Skywater technology with a feature size of 130nm which is the minimum length of the transitor.
-Public Repository
-Documentation https://skywater-pdk--136.org.readthedocs.build
-PDK Library and files https://github.com/google/skywater-pdk
-Community - slack https://join.skywater.tools
-Intro - Open source EDA tools
-image
+# Intro - Open source EDA tools
+![image](https://user-images.githubusercontent.com/88816771/129223330-1e44a475-731f-4dfe-a59d-b5a00c131f0d.png)
 
-Installing Sky130 open-PDK
-Clone the repository https://github.com/RTimothyEdwards/open_pdks
-Run cd open_pdks
-Run configure --enable-sky130-pdk
-Run make
-Run sudo make install
-Tools:
-Magic
+## Installing Sky130 open-PDK
+1. Clone the repository https://github.com/RTimothyEdwards/open_pdks
+2. Run **cd open_pdks**
+3. Run configure **--enable-sky130-pdk**
+4. Run **make**
+5. Run **sudo make install**
 
-Handles GDS DEF and LEF, Does extraction and layouts are created and managed.
-Mainly used to check DRCs and the violations can be fixed by following the design rules.
-Klayout - Alternative tool for DRC checks
+## Tools:
+- Magic
+  - Handles GDS DEF and LEF, Does extraction and layouts are created and managed.
+  - Mainly used to check DRCs and the violations can be fixed by following the design rules.
 
-Openlane - A flow that supports the OpenRoad tools. This can be used interactively or ./flow.tcl can be used to run the scripts for RTL to GDSII
+- Klayout - Alternative tool for DRC checks
 
-Xschem - Third repository for Schematic Editor
+- Openlane - A flow that supports the OpenRoad tools. This can be used interactively or ./flow.tcl can be used to run the scripts for RTL to GDSII
 
-Netgen - LVS tool
+- Xschem - Third repository for Schematic Editor
 
-Ngspice - Spice simulator
+- Netgen - LVS tool
 
-Sky130 Libraries
-image
+- Ngspice - Spice simulator
 
-Sky130nm Layers
-Min length of FET is 150nm
-5 Layers of metals
-Local interconnect connects to neighboring nodes or to metal 1 and not for routing
-Poly contacts have nitride poly cut layer (NPC) around them
-Front-end - Metal layers and vias for Diffusion and Ion implantation
-Back-end - Deposition, MiM cap layers
-MiM - Metal insulator Metal (Metal plates between two metal layers)
-Redistribution Layer: Copper is deposited on the fabricated chip and solder bumps are added on top the Redistribution layer. No wire bonding is required.
-Devices
-Some of the devices are bipolar PNP, bipolar NPN, diffusion resistors, polysilicon resistors, pwell resistors, and etc.,
-The devices have discrete widths ranging from 5.73um to 0.35um.
-Layouts are used for tapeouts.
-There are also hidden layers that the user may not know.
-Libraries
-Digital standard cell
-contains Standard cell's Layout in GDS form, Liberty timing files, verilog files and netlists This is how the libraries are named: sky130_vendor_library-type[name] fd stands for foundry sc stands for standard cells hd stands for high density Example: sky130_fd_sc_hd__nor2_2 the type name is separated by "double underscore"
+## Sky130 Libraries
 
-I/O cells
-These cells are used as pad frames. It's readily available in Caravel.
-sky130_fd_io
+![image](https://user-images.githubusercontent.com/88816771/129225883-b5825306-a3db-4a1b-a925-3b3c79dbec7b.png)
+
+# Sky130nm Layers
+- Min length of FET is 150nm
+- 5 Layers of metals
+  - Local interconnect connects to neighboring nodes or to metal 1 and not for routing
+  - Poly contacts have nitride poly cut layer (NPC) around them
+ - Front-end - Metal layers and vias for Diffusion and Ion implantation
+ - Back-end - Deposition, MiM cap layers
+   - MiM - Metal insulator Metal (Metal plates between two metal layers)
+ - Redistribution Layer: Copper is deposited on the fabricated chip and solder bumps are added on top the Redistribution layer. No wire bonding is required.
+ 
+# Devices
+- Some of the devices are bipolar PNP, bipolar NPN, diffusion resistors, polysilicon resistors, pwell resistors, and etc.,
+- The devices have discrete widths ranging from 5.73um to 0.35um.
+- Layouts are used for tapeouts.
+- There are also hidden layers that the user may not know. 
+
+# Libraries
+## Digital standard cell 
+contains Standard cell's Layout in GDS form, Liberty timing files, verilog files and netlists
+This is how the libraries are named:
+sky130_vendor_library-type[_name]
 fd stands for foundry
-I/O stands for input/output
-Primitive devices and models
-Its provided by the foundry that includes transistors, varactors, ESD devices, array of various parallel plate capacitors.
-Some of the other libraries are SRAM and NVRAM that are under construction.
-Device flow -manual
-Shematic
-Represents all the devices and it's hierarchy
-Xschem has symbol libraries to create schematics. It supports both ngspice for analog simulation and gaw for waveform viewing
-Schematic can be created using Xschem and the same is simulated using ngspice and exported as netlist
-Layout
-Magic is a layout editor that can be used to paint the layout or the same can be --extracted from netlist generated by Xschem
-The layout is drawn based on the parameters used.
-LVS
-netgen is used for comparing a layout with a schematic
+sc stands for standard cells
+hd stands for high density_
+Example: sky130_fd_sc_hd__nor2_2 the type name is separated by "double underscore"
+
+## I/O cells
+- These cells are used as pad frames. It's readily available in Caravel.
+- sky130_fd_io
+- fd stands for foundry
+- I/O stands for input/output
+
+## Primitive devices and models
+- Its provided by the foundry that includes transistors, varactors, ESD devices, array of various parallel plate capacitors. 
+- Some of the other libraries are SRAM and NVRAM that are under construction.
+
+# Device flow -manual
+## Shematic
+- Represents all the devices and it's hierarchy
+- Xschem has symbol libraries to create schematics. It supports both ngspice for analog simulation and gaw for waveform viewing
+- Schematic can be created using Xschem and the same is simulated using ngspice and exported as netlist
+
+## Layout
+- Magic is a layout editor that can be used to paint the layout or the same can be --extracted from netlist generated by Xschem
+- The layout is drawn based on the parameters used.
+
+## LVS 
+- netgen is used for comparing a layout with a schematic
