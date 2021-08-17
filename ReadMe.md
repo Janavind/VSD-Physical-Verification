@@ -5,8 +5,8 @@ This repo details the learning in 5-day Physical Verification workshop by VSD fr
 The workshop details the process of Physical verification like DRC and LVS checks during a RTL to GDSII flow using Skywater 130nm Technology. This is very useful for chip fabricatioln, and this lets the participants get ready for the tape out.
 The workshop helps in identifying the violatiolns during the physical verification step and rectify the same. The workshop focuses in using open lane intended for physical verification like Magic, Netgen, ngspice, Xschem., etc.,
 
-Organized by: Kunal Gosh, Co-founder, VSD Corp. Pvt. Ltd.
-Instructor: Tim Edwards, works for Efabless and a open tools developer
+**Organized by: Kunal Gosh, Co-founder, VSD Corp. Pvt. Ltd.
+Instructor: Tim Edwards, works for Efabless and a open tools developer**
 
 ## Overview:
 - **Day 1 - Introduction to Skywater PDK**
@@ -16,8 +16,28 @@ Instructor: Tim Edwards, works for Efabless and a open tools developer
   - Sky130nm Libraries
   - Sky130nm Layers
   - Devices and I/O cells
+- **Day 2 - Introduction to DRC and LVS**
+  - GDS read
+  - Understanding Ports
+  - Abstaract view
+  - Extraction
+  - DRC Style
+  - LVS
+  - XOR comparison
+- **Day 3 - Design Rule Checking (DRC)
+  - Basic rules
+  - Via rules
+  - Minimum area and hole rules
+  - Derived layers
+  - Parameterized devices
+  - Miscellaneous errors
+  - Antenna Checks
+  - Challenges
+- **Day 4 - OpenLane Flow**
+- **Day 5 - LVS**
 
 ## Introduction to Skywater PDK
+
 Mosis Foundation, California made the scalable CMOS rules available in 1980s. Skywater 130nm SCMOS is a fully open source, making all the design rules, device definitions, etc., public.
 
 The caravel Chip has a pad frame, RISC-V processor and large space for the user to append the design. The design is verified and fabricated by Efabless foundry partnering with Google for free of cost.
