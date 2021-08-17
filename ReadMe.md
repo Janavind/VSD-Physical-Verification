@@ -5,8 +5,8 @@ This repo details the learning in 5-day Physical Verification workshop by VSD fr
 The workshop details the process of Physical verification like DRC and LVS checks during a RTL to GDSII flow using Skywater 130nm Technology. This is very useful for chip fabricatioln, and this lets the participants get ready for the tape out.
 The workshop helps in identifying the violatiolns during the physical verification step and rectify the same. The workshop focuses in using open lane intended for physical verification like Magic, Netgen, ngspice, Xschem., etc.,
 
-**Organized by: Kunal Gosh, Co-founder, VSD Corp. Pvt. Ltd.
-Instructor: Tim Edwards, works for Efabless and a open tools developer**
+**Organized by: Kunal Gosh, Co-founder, VSD Corp. Pvt. Ltd.**
+**Instructor: Tim Edwards, works for Efabless and a open tools developer**
 
 ## Overview:
 - **Day 1 - Introduction to Skywater PDK**
