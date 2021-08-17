@@ -703,5 +703,14 @@ https://user-images.githubusercontent.com/88816771/129488882-eb39de04-25ea-4879-
 
 
 ![image](https://user-images.githubusercontent.com/88816771/129489076-fa0b5dcb-c759-4299-9546-fc91882323ce.png)
+  
+# Acknowledgement
+  I would like to thank the entire VSD team for bring this workshop to the VLSI world, especially, organizer - Kunal Ghosh, and Instructor Tim Edwards. I would also like to mention all the Teaching Assistants for the time to time clarification of all the doubts.
+  
+# Refer here for more details:
+ -  https://www.vlsisystemdesign.com/basic_courses/
+ -  https://www.skywatertechnology.com/
+ -  https://efabless.com/
+  
 
 
