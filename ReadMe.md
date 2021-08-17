@@ -53,7 +53,7 @@ The workshop helps in identifying the violatiolns during the physical verificati
   - LVS - Digital PLL
   - LVS - Property errors
 
-# Introduction to Skywater PDK
+## Introduction to Skywater PDK
 Mosis Foundation, California made the scalable CMOS rules available in 1980s. Skywater 130nm SCMOS is a fully open source, making all the design rules, device definitions, etc., public. 
 
 The caravel Chip has a pad frame, RISC-V processor and large space for the user to append the design. The design is verified and fabricated by Efabless foundry partnering with Google for free of cost. 
@@ -68,10 +68,8 @@ The caravel Chip has a pad frame, RISC-V processor and large space for the user 
   - Community - slack
     https://join.skywater.tools
 
-# Intro - Open source EDA tools
-![image](https://user-images.githubusercontent.com/88816771/129223330-1e44a475-731f-4dfe-a59d-b5a00c131f0d.png)
-
 ## Installing Sky130 open-PDK
+Following are the steps to install PDK:
 1. Clone the repository https://github.com/RTimothyEdwards/open_pdks
 2. Run **cd open_pdks**
 3. Run configure **--enable-sky130-pdk**
@@ -79,19 +77,22 @@ The caravel Chip has a pad frame, RISC-V processor and large space for the user 
 5. Run **sudo make install**
 
 ## Tools:
+
+![image](https://user-images.githubusercontent.com/88816771/129223330-1e44a475-731f-4dfe-a59d-b5a00c131f0d.png)
+
 - Magic
   - Handles GDS DEF and LEF, Does extraction and layouts are created and managed.
   - Mainly used to check DRCs and the violations can be fixed by following the design rules.
 
 - Klayout - Alternative tool for DRC checks
 
-- Openlane - A flow that supports the OpenRoad tools. This can be used interactively or ./flow.tcl can be used to run the scripts for RTL to GDSII
+- Openlane - A flow that supports the OpenRoad tools. This can be used non-interactively by calling individual tools or ./flow.tcl can be used to run the scripts interactively for RTL to GDSII
 
-- Xschem - Third repository for Schematic Editor
+- Xschem - Third repository for Schematic Editor that is used to create new schematics or can be used to import the schematics and generate nelists out of that
 
-- Netgen - LVS tool
+- Netgen - LVS tool that compares the layout design with its schematic between netlists to verify the geometries
 
-- Ngspice - Spice simulator
+- Ngspice - Spice simulator, used to study the characteristics of the design
 
 ## Sky130 Libraries
 
