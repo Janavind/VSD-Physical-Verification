@@ -24,7 +24,7 @@ Instructor: Tim Edwards, works for Efabless and a open tools developer**
   - DRC Style
   - LVS
   - XOR comparison
-- **Day 3 - Design Rule Checking (DRC)
+- **Day 3 - Design Rule Checking (DRC)**
   - Basic rules
   - Via rules
   - Minimum area and hole rules
