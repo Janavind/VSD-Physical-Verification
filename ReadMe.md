@@ -230,7 +230,8 @@ Keys to use:
 - Add in and out and gnd pins
 - Finally save and exit
 
-[sch to symbol.zip](https://github.com/Janavind/VSD-Physical-Verification/files/6978610/sch.to.symbol.zip)
+https://user-images.githubusercontent.com/88816771/129769082-4c85521f-1b77-4a16-8e30-2df6bd6bb20f.mp4
+
 
 ### Simulating the testbench
 
