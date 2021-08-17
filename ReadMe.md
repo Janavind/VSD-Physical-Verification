@@ -54,7 +54,9 @@ The workshop helps in identifying the violatiolns during the physical verificati
   - LVS - Digital PLL
   - LVS - Property errors
 
-## Introduction to Skywater PDK
+# Day - 1 Introduction to Skywater PDK
+
+## Basics
 Mosis Foundation, California made the scalable CMOS rules available in 1980s. Skywater 130nm SCMOS is a fully open source, making all the design rules, device definitions, etc., public. 
 
 The caravel Chip has a pad frame, RISC-V processor and large space for the user to append the design. The design is verified and fabricated by Efabless foundry partnering with Google for free of cost. 
