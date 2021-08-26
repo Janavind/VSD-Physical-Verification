@@ -76,9 +76,9 @@ The caravel Chip has a pad frame, RISC-V processor and large space for the user 
 
 ## Installing Sky130 open-PDK
 Following are the steps to install PDK:
-1. Clone the repository https://github.com/RTimothyEdwards/open_pdks
+1. Clone the repository **git clone https://github.com/RTimothyEdwards/open_pdks**
 2. Run **cd open_pdks**
-3. Run configure **--enable-sky130-pdk**
+3. Run **./configure --enable-sky130-pdk**
 4. Run **make**
 5. Run **sudo make install**
 
